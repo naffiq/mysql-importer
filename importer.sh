@@ -1,10 +1,11 @@
 #!/bin/bash
+
+# Imports sql files from specific folder. Author: naffiq <abdu.galymzhan@gmail.com>
+
 if [ -z $1 ] || [-z $2]; then
 	echo "Wrong syntax: ./importer.sh SQLS_FOLDER DBNAME"
 	exit
 fi
-
-echo "Imports sql files from specific folder. Author: naffiq <abdu.galymzhan@gmail.com>"
 
 # Получаем хост БД
 echo "DB host [127.0.0.1]:"
